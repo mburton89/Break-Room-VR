@@ -27,7 +27,7 @@ public class ObjectGrabber : MonoBehaviour
             _collider.enabled = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (_potentialObject != null)
             {
@@ -36,7 +36,7 @@ public class ObjectGrabber : MonoBehaviour
             }
         }
 
-        else if (Input.GetKeyUp(KeyCode.Q))
+        else if (Input.GetKeyUp(KeyCode.E))
         {
             if (_grabbedObject != null)
             {
