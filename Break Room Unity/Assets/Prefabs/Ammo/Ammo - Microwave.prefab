@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 7673789822596409653}
   - component: {fileID: -1656039839307668209}
   - component: {fileID: -5251948673191296742}
+  - component: {fileID: -105162330134688683}
   m_Layer: 0
   m_Name: Ammo - Microwave
-  m_TagString: Untagged
+  m_TagString: Ammo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +109,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7673789822596409650}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c0e62af40e0e67d4490c5c9a5c9fba3b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -129,3 +130,15 @@ MonoBehaviour:
   colorShift: {fileID: 7673789822596409655}
   hitColor: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
   currentAmmoType: 2
+--- !u!114 &-105162330134688683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673789822596409650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09eb23399f3b2c74fac14729413547ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
