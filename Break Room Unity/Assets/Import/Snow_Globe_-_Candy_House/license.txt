@@ -1,0 +1,11 @@
+Model Information:
+* title:	Snow Globe - Candy House
+* source:	https://sketchfab.com/3d-models/snow-globe-candy-house-59301c700ac14a47b560451333270b4a
+* author:	Heaney_3D (https://sketchfab.com/thomasheaney)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Snow Globe - Candy House" (https://sketchfab.com/3d-models/snow-globe-candy-house-59301c700ac14a47b560451333270b4a) by Heaney_3D (https://sketchfab.com/thomasheaney) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
