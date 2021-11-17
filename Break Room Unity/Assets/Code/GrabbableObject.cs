@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class GrabbableObject : MonoBehaviour
 {
     private ObjectGrabber _controller;
@@ -14,7 +14,11 @@ public class GrabbableObject : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<AIScript>())
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<AIScript>().enabled = false;
+            collision.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+            collision.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            //Destroy(collision.gameObject);
+
         }
     }
 
