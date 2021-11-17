@@ -6,6 +6,7 @@ public class Ammo : MonoBehaviour
 {
     [SerializeField] MeshRenderer colorShift;
     [SerializeField] Material hitColor;
+    AudioSource audioSource;
 
     public enum ammoType
     {
@@ -16,15 +17,16 @@ public class Ammo : MonoBehaviour
 
     public ammoType currentAmmoType;
 
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag != "SpawnZone")
+        if (collision.gameObject.tag != "SpawnZone" && collision.gameObject.tag != "Player")
         {
-          
-            if (collision.gameObject.tag != "Player")
-            {
-                HandleImpact();
-            }
+            HandleImpact();
         }
     }
 
@@ -42,5 +44,7 @@ public class Ammo : MonoBehaviour
         {
             colorShift.material = hitColor;
         }
+
+        audioSource.Play();
     }
 }
