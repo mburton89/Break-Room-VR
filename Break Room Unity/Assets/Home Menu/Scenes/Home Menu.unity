@@ -772,7 +772,7 @@ MonoBehaviour:
   optionsButton: {fileID: 471094333}
   exitButton: {fileID: 686247951}
   secondsToMoveButton: 0.25
-  secondsBetweenButtonMoves: 0.25
+  secondsBetweenButtonMoves: 0.5
   ease: 24
 --- !u!114 &259612923
 MonoBehaviour:
