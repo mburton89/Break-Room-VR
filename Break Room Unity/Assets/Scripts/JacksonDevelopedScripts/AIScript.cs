@@ -11,6 +11,9 @@ public class AIScript : MonoBehaviour
     private Vector3 targetSpot;
     private bool setPos = true;
 
+    public GameObject hand;
+    private bool throwing = false;
+
     public EnemyLauncher launcher;
 
     public Transform target;
@@ -21,13 +24,22 @@ public class AIScript : MonoBehaviour
     {
         //target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
-        Debug.Log(transform.forward);
     }
 
     // Update is called once per frame
     void Update()
     {
         float distance = Vector3.Distance(target.position, transform.position);
+
+        if (throwing == true)
+        {
+            hand.transform.Translate(Vector3.forward * Time.deltaTime * 2);
+            hand.transform.Translate(Vector3.left * Time.deltaTime);
+        }
+        else
+        {
+            hand.transform.localPosition = new Vector3(0.7f, 0f, 0f);
+        }
 
         if (distance > lookRadius)
         {
@@ -95,7 +107,10 @@ public class AIScript : MonoBehaviour
 
     IEnumerator moveTime()
     {
-        yield return new WaitForSeconds(2.5f);
+        throwing = false;
+        yield return new WaitForSeconds(2f);
+        //throwing = true;
+        yield return new WaitForSeconds(.5f);
         setPos = true;
     }
 }
