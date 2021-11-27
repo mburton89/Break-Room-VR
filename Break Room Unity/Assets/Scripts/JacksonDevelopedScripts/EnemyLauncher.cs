@@ -7,7 +7,7 @@ public class EnemyLauncher : MonoBehaviour
     public Transform spawnPoint;
     public GameObject grenadePrefab;
     public AIScript parentScript;
-    private float range = 40f;
+    private float range = 60f;
     private GameObject newGrenade;
     private Vector3 playerDirection;
 
@@ -19,7 +19,7 @@ public class EnemyLauncher : MonoBehaviour
     void Update()
     {
         
-        playerDirection = (transform.position - parentScript.target.position).normalized;
+        playerDirection = (parentScript.target.position - transform.position).normalized;
     }
 
     public void CreateBall()

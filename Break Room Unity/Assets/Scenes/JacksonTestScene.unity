@@ -373,27 +373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
---- !u!1 &975386258 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 975386258, guid: a1555910455c2e4458973d2034628561, type: 3}
-  m_PrefabInstance: {fileID: 3152772834744229004}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1681139283 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4459864850019384738, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
   m_PrefabInstance: {fileID: 894677312}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1734082565 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3152772834155266154, guid: a1555910455c2e4458973d2034628561, type: 3}
-  m_PrefabInstance: {fileID: 3152772834744229004}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7acc91f15674de439718d67cf83c385, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &3152772834744229004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -450,20 +434,8 @@ PrefabInstance:
       value: AIEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 3152772834155266154, guid: a1555910455c2e4458973d2034628561, type: 3}
-      propertyPath: hand
-      value: 
-      objectReference: {fileID: 975386258}
-    - target: {fileID: 3152772834155266154, guid: a1555910455c2e4458973d2034628561, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1681139283}
-    - target: {fileID: 3152772834317780930, guid: a1555910455c2e4458973d2034628561, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3152772834317780931, guid: a1555910455c2e4458973d2034628561, type: 3}
-      propertyPath: parentScript
-      value: 
-      objectReference: {fileID: 1734082565}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1555910455c2e4458973d2034628561, type: 3}

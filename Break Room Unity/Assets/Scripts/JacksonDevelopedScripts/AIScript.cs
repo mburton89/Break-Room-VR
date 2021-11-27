@@ -109,7 +109,7 @@ public class AIScript : MonoBehaviour
     {
         throwing = false;
         yield return new WaitForSeconds(2f);
-        //throwing = true;
+        throwing = true;
         yield return new WaitForSeconds(.5f);
         setPos = true;
     }

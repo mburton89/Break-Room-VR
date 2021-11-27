@@ -309,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 35
+  hand: {fileID: 975386258}
   launcher: {fileID: 3152772834317780931}
   target: {fileID: 0}
 --- !u!195 &3152772834155266151
@@ -377,7 +378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3152772834317780929}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.75}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 975386259}
@@ -460,6 +461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 3152772834317780930}
   grenadePrefab: {fileID: 2877198948452557748, guid: 83c559c5ec8a17e46a53b555fb732cf4, type: 3}
+  parentScript: {fileID: 3152772834155266154}
 --- !u!1 &3152772834390688699
 GameObject:
   m_ObjectHideFlags: 0
