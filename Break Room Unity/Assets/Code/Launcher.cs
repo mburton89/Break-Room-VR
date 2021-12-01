@@ -6,7 +6,7 @@ public class Launcher : MonoBehaviour
 {
     public Transform spawnPoint;
     public GameObject grenadePrefab;
-    public float range = 15f;
+    private float range = 20f;
     public KeyCode launchKey;
 
     void Start()
