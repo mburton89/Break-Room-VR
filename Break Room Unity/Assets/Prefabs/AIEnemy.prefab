@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 855655119}
   - component: {fileID: 855655118}
   - component: {fileID: 855655117}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: LHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 975386262}
   - component: {fileID: 975386261}
   - component: {fileID: 975386260}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 3152772834155266154}
   - component: {fileID: 3152772834155266151}
   - component: {fileID: 3152772834155266144}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AIEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +363,7 @@ GameObject:
   - component: {fileID: 3152772834317780957}
   - component: {fileID: 3152772834317780956}
   - component: {fileID: 3152772834317780931}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Launcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 3152772834390688695}
   - component: {fileID: 3152772834390688694}
   - component: {fileID: 3152772834390688693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

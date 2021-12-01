@@ -33,8 +33,8 @@ public class AIScript : MonoBehaviour
 
         if (throwing == true)
         {
-            hand.transform.Translate(Vector3.forward * Time.deltaTime * 2);
-            hand.transform.Translate(Vector3.left * Time.deltaTime);
+            hand.transform.Translate(Vector3.forward * Time.deltaTime * 4);
+            hand.transform.Translate(Vector3.left * Time.deltaTime *2);
         }
         else
         {
@@ -108,9 +108,9 @@ public class AIScript : MonoBehaviour
     IEnumerator moveTime()
     {
         throwing = false;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2.25f);
         throwing = true;
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.25f);
         setPos = true;
     }
 }
