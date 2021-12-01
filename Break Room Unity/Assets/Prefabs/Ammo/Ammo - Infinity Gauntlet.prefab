@@ -3177,7 +3177,7 @@ GameObject:
   - component: {fileID: 77047620028075995}
   m_Layer: 0
   m_Name: Ammo - Infinity Gauntlet
-  m_TagString: Untagged
+  m_TagString: Ammo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3191,7 +3191,7 @@ Transform:
   m_GameObject: {fileID: 77047620028075973}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 10.01, y: 1.437, z: 24.3}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 77047619834805040}
   m_Father: {fileID: 0}
@@ -3212,7 +3212,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 77047620028075973}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c0e62af40e0e67d4490c5c9a5c9fba3b, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bottle
+* source:	https://sketchfab.com/3d-models/bottle-8913b23dc0dc49a8a65f42f17db4ba68
+* author:	Haocean (https://sketchfab.com/Haocean)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bottle" (https://sketchfab.com/3d-models/bottle-8913b23dc0dc49a8a65f42f17db4ba68) by Haocean (https://sketchfab.com/Haocean) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

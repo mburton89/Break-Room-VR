@@ -24,7 +24,7 @@ public class Ammo : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag != "SpawnZone" && collision.gameObject.tag != "Player")
+        if (collision.gameObject.tag != "SpawnZone" && collision.gameObject.tag != "Player" && collision.gameObject.tag != "Ammo")
         {
             HandleImpact();
         }
@@ -45,6 +45,6 @@ public class Ammo : MonoBehaviour
             colorShift.material = hitColor;
         }
 
-        audioSource.Play();
+        //audioSource.Play();
     }
 }
