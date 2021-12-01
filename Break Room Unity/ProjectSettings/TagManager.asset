@@ -7,6 +7,7 @@ TagManager:
   - Ammo
   - Enemy
   - SpawnZone
+  - knock
   layers:
   - Default
   - TransparentFX
