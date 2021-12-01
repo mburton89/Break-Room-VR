@@ -6,21 +6,42 @@ public class EnemyLauncher : MonoBehaviour
 {
     public Transform spawnPoint;
     public GameObject grenadePrefab;
-    private float range = 20f;
+    public AIScript parentScript;
+    private float range = 60f;
+    private GameObject newGrenade;
+    private Vector3 playerDirection;
 
     void Start()
     {
-        Debug.Log(transform.forward);
+        CreateBall();
     }
 
     void Update()
     {
         
+        playerDirection = (parentScript.target.position - transform.position).normalized;
+    }
+
+    public void CreateBall()
+    {
+        newGrenade = Instantiate(grenadePrefab, spawnPoint.position, spawnPoint.rotation);
+        newGrenade.GetComponent<Rigidbody>().detectCollisions = false;
+        newGrenade.transform.parent = gameObject.transform;
+        newGrenade.GetComponent<Rigidbody>().useGravity = false;
     }
 
     public void LaunchGrenade()
     {
-        GameObject newGrenade = Instantiate(grenadePrefab, spawnPoint.position, spawnPoint.rotation);
-        newGrenade.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * range, ForceMode.Impulse);
+        Destroy(newGrenade);
+        GameObject projectile = Instantiate(grenadePrefab, spawnPoint.position, spawnPoint.rotation);
+        projectile.GetComponent<Rigidbody>().AddForce(playerDirection * range, ForceMode.Impulse);
+
+        StartCoroutine(WaitTime());
+    }
+
+    IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(1f);
+        CreateBall();
     }
 }
