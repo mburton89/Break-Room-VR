@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 5527006846159870417}
   - component: {fileID: 1420829362}
   - component: {fileID: -8157858762770306165}
+  - component: {fileID: -7038686759815059829}
   m_Layer: 0
   m_Name: Ammo - Plate
-  m_TagString: Untagged
+  m_TagString: Ammo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,4 +128,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51f4f4cec1e3e9f479da56fb80306d38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorShift: {fileID: 0}
+  hitColor: {fileID: 0}
   currentAmmoType: 1
+--- !u!114 &-7038686759815059829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792787207897807784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09eb23399f3b2c74fac14729413547ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
