@@ -12,7 +12,7 @@ public class GrabbableObject : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<AIScript>())
+        if (collision.gameObject.GetComponent<AIScript>() && gameObject.GetComponent<Rigidbody>().velocity.magnitude > 10f)
         {
             Destroy(collision.gameObject);
         }
