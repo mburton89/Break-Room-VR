@@ -15,7 +15,7 @@ public class RandomIntercom : MonoBehaviour
 
     void Start()
     {
-        
+        StartCoroutine(PlayRandomClip());
     }
 
     private void Update()
@@ -27,4 +27,11 @@ public class RandomIntercom : MonoBehaviour
         }
     }
 
+    private IEnumerator PlayRandomClip()
+    {
+        intercom.clip = intercomAnnouncements[Random.Range(0, intercomAnnouncements.Length)];
+        intercom.PlayOneShot(intercom.clip);
+        yield return new WaitForSeconds(60);
+        StartCoroutine(PlayRandomClip());
+    }
 }

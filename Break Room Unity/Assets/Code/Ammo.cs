@@ -45,6 +45,6 @@ public class Ammo : MonoBehaviour
             colorShift.material = hitColor;
         }
 
-        audioSource.Play();
+        //audioSource.Play();
     }
 }
