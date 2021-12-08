@@ -10,7 +10,7 @@ public class RAGDOLLLL : MonoBehaviour
     public GameObject ThisGuysRig;
     public Animator ThisGuyAnimator;
     public KeyCode bitch;
-
+   
 
 
 
@@ -55,10 +55,11 @@ public class RAGDOLLLL : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collison)
     {
-        if (collison.gameObject.tag == "knock")
+        if (collison.gameObject.tag == "Ammo")
         {
-
+            //Rigidbody rb = getComponent<Ri>
             RagdollModeOn();
+            //rb.velocity = collison.gameObject.transform.getComponent<RigidBody>().velocity;
 
         }
     }
