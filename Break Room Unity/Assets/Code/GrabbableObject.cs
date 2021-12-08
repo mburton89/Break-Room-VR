@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class GrabbableObject : MonoBehaviour
 {
     private ObjectGrabber _controller;
@@ -12,9 +12,16 @@ public class GrabbableObject : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.GetComponent<AIScript>() && gameObject.GetComponent<Rigidbody>().velocity.magnitude > 10f)
+        if (collision.gameObject.GetComponent<AIScript>() && gameObject.GetComponent<Rigidbody>().velocity.magnitude > 10f && !collision.gameObject.GetComponent<GrabbableObject>())
         {
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<AIScript>().enabled = false;
+            collision.gameObject.GetComponent<NavMeshAgent>().enabled = false;
+            collision.gameObject.GetComponentInChildren<EnemyLauncher>().enabled = false;
+            collision.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            collision.gameObject.GetComponent<Rigidbody>().velocity = collision.relativeVelocity / 4f;
+            collision.gameObject.AddComponent<GrabbableObject>();
+            collision.gameObject.layer = default;
         }
     }
 
