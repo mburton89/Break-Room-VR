@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Diffuser Profile
+  m_Name: Tubes Profile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 107385907746675340}
---- !u!114 &107385907746675340
+  - {fileID: 2894528887223410361}
+--- !u!114 &2894528887223410361
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -29,16 +29,16 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   threshold:
-    m_OverrideState: 0
-    m_Value: 3
+    m_OverrideState: 1
+    m_Value: 0.8
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 5
+    m_Value: 21.1
     min: 0
   scatter:
     m_OverrideState: 1
-    m_Value: 0.143
+    m_Value: 0
     min: 0
     max: 1
   clamp:
@@ -46,7 +46,7 @@ MonoBehaviour:
     m_Value: 65472
     min: 0
   tint:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
     hdr: 0
     showAlpha: 0
