@@ -7,7 +7,7 @@ public class EnemyLauncher : MonoBehaviour
     public Transform spawnPoint;
     public GameObject grenadePrefab;
     public AIScript parentScript;
-    private float range = 60f;
+    private float range = 45f;
     private GameObject newGrenade;
     private Vector3 playerDirection;
 
@@ -39,9 +39,9 @@ public class EnemyLauncher : MonoBehaviour
         StartCoroutine(WaitTime());
     }
 
-    IEnumerator WaitTime()
+    private IEnumerator WaitTime()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(4f);
         CreateBall();
     }
 }

@@ -19,9 +19,11 @@ public class GrabbableObject : MonoBehaviour
             collision.gameObject.GetComponent<NavMeshAgent>().enabled = false;
             collision.gameObject.GetComponentInChildren<EnemyLauncher>().enabled = false;
             collision.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-            collision.gameObject.GetComponent<Rigidbody>().velocity = collision.relativeVelocity / 4f;
+            collision.gameObject.GetComponent<Rigidbody>().velocity = collision.relativeVelocity / -50f;
             collision.gameObject.AddComponent<GrabbableObject>();
             collision.gameObject.layer = default;
+            gameObject.GetComponent<Rigidbody>().AddExplosionForce(1000f, transform.position, 20f);
+            collision.gameObject.GetComponent<Rigidbody>().AddExplosionForce(1000f, transform.position, 20f);
         }
     }
 

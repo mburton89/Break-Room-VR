@@ -108,7 +108,7 @@ public class AIScript : MonoBehaviour
     IEnumerator moveTime()
     {
         throwing = false;
-        yield return new WaitForSeconds(2.25f);
+        yield return new WaitForSeconds(5.25f);
         throwing = true;
         yield return new WaitForSeconds(.25f);
         setPos = true;
