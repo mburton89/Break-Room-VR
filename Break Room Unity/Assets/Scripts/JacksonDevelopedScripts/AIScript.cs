@@ -19,6 +19,7 @@ public class AIScript : MonoBehaviour
     public Transform target;
     NavMeshAgent agent;
 
+    public Animator animator;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,16 +32,6 @@ public class AIScript : MonoBehaviour
     {
         float distance = Vector3.Distance(target.position, transform.position);
 
-        if (throwing == true)
-        {
-            hand.transform.Translate(Vector3.forward * Time.deltaTime * 4);
-            hand.transform.Translate(Vector3.left * Time.deltaTime *2);
-        }
-        else
-        {
-            hand.transform.localPosition = new Vector3(0.7f, 0f, 0f);
-        }
-
         if (distance > lookRadius)
         {
             agent.SetDestination(target.position);
@@ -50,7 +41,6 @@ public class AIScript : MonoBehaviour
         {
             if (setPos == true || targetSpot == new Vector3(0f, 0f, 0f))
             {
-                launcher.LaunchGrenade();
                 targetSpot = RandomNavSphere(target.position, maxDistance, minDistance, -1);
                 setPos = false;
                 StartCoroutine(moveTime());
@@ -108,9 +98,11 @@ public class AIScript : MonoBehaviour
     IEnumerator moveTime()
     {
         throwing = false;
-        yield return new WaitForSeconds(2.25f);
+        animator.SetTrigger("throw");
+        yield return new WaitForSeconds(2f);
+        launcher.LaunchGrenade();
         throwing = true;
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(1f);
         setPos = true;
     }
 }
