@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1907
     height: 985
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 57
+  controlID: 16
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -120,14 +120,14 @@ MonoBehaviour:
     y: 554
     width: 1456.5
     height: 381
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 12}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 58
+  controlID: 17
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 59
+  controlID: 18
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -305,7 +305,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_SearchFilter:
-    m_NameFilter: debug
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -315,25 +315,25 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 0
+    m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Outside Assets/Breakable Windows/Scripts
     m_Globs: []
-    m_OriginalText: debug
+    m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Outside Assets/Breakable Windows/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\WUStudent\Documents\GitHub\Break-Room-VR\Break Room
     Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 807b0000
-    m_LastClickedID: 31616
-    m_ExpandedIDs: 00000000807b0000ea7e000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 92}
+    m_SelectedIDs: 681c0200
+    m_LastClickedID: 138344
+    m_ExpandedIDs: 000000009a6f0000ba720000c67200006a1c020000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000807b0000
+    m_ExpandedIDs: 000000009a6f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,9 +386,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: a0e5ffff
+    m_LastClickedInstanceID: -6752
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -488,10 +488,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: ace1f5ff78fbf6ff22a2faff9cc8fdff08d1ffffdadcffff78ddffff9ee0ffffdcf4ffff0ef9ffffd4420100b0050200
+      scrollPos: {x: 0, y: 400}
+      m_SelectedIDs: dc760000
+      m_LastClickedID: 30428
+      m_ExpandedIDs: 4cf5ffff36fbfffff4ffffff88790000d67a0000f27c0000527f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -740,9 +740,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.1433535, y: 9.557885, z: -5.1911983}
+    m_Target: {x: 48.37621, y: -6.801984, z: 40.760124}
     speed: 2
-    m_Value: {x: 2.1433535, y: 9.557885, z: -5.1911983}
+    m_Value: {x: 48.37621, y: -6.801984, z: 40.760124}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -789,9 +789,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.012268118, y: -0.9561527, z: 0.040478826, w: 0.28980315}
+    m_Target: {x: 0.18518087, y: 0.31500039, z: -0.06280693, w: 0.9287325}
     speed: 2
-    m_Value: {x: 0.0122681, y: -0.9561513, z: 0.040478766, w: 0.28980273}
+    m_Value: {x: 0.18518032, y: 0.31499946, z: -0.06280674, w: 0.9287298}
   m_Size:
     m_Target: 13.308539
     speed: 2
