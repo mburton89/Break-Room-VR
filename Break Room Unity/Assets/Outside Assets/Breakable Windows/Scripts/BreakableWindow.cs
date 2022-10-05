@@ -150,11 +150,12 @@ public class BreakableWindow : MonoBehaviour {
         mf.mesh = m;
         
         MeshCollider col = obj.AddComponent<MeshCollider>();
-        col.inflateMesh = true;
+        //col.inflateMesh = true;
         col.convex = true;
         if (destroyPhysicsTime > 0 && destroyColliderWithPhysics) Destroy(col, destroyPhysicsTime);
-        
-        Rigidbody rigid = obj.AddComponent<Rigidbody>();
+
+        obj.AddComponent<Rigidbody>();
+        Rigidbody rigid = obj.GetComponent<Rigidbody>();
         rigid.centerOfMass = (v[0] + v[1] + v[2]) / 3f;
         if (addTorques && preCalculate == false) rigid.AddTorque(new Vector3(Random.value > 0.5f ? Random.value * 50 : -Random.value * 50, Random.value > 0.5f ? Random.value * 50 : -Random.value * 50, Random.value > 0.5f ? Random.value * 50 : -Random.value * 50));
         if (destroyPhysicsTime > 0) Destroy(rigid, destroyPhysicsTime);
